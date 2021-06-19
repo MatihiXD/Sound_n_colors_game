@@ -40,7 +40,7 @@ Grid:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1634388707469661618}
   m_Enabled: 1
-  m_CellSize: {x: 0.7, y: 0.7, z: 0}
+  m_CellSize: {x: 2.56, y: 2.56, z: 0}
   m_CellGap: {x: 0, y: 0, z: 0}
   m_CellLayout: 0
   m_CellSwizzle: 0
@@ -85,11 +85,31 @@ Tilemap:
   m_GameObject: {fileID: 2397404098460689968}
   m_Enabled: 1
   m_Tiles:
+  - first: {x: 1, y: -18, z: 0}
+    second:
+      serializedVersion: 2
+      m_TileIndex: 70
+      m_TileSpriteIndex: 70
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 0
+      m_TileObjectToInstantiateIndex: 65535
+      dummyAlignment: 0
+      m_AllTileFlags: 1073741825
   - first: {x: 9, y: -18, z: 0}
     second:
       serializedVersion: 2
       m_TileIndex: 69
       m_TileSpriteIndex: 69
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 0
+      m_TileObjectToInstantiateIndex: 65535
+      dummyAlignment: 0
+      m_AllTileFlags: 1073741825
+  - first: {x: 5, y: -17, z: 0}
+    second:
+      serializedVersion: 2
+      m_TileIndex: 73
+      m_TileSpriteIndex: 73
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -120,6 +140,26 @@ Tilemap:
       serializedVersion: 2
       m_TileIndex: 68
       m_TileSpriteIndex: 68
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 0
+      m_TileObjectToInstantiateIndex: 65535
+      dummyAlignment: 0
+      m_AllTileFlags: 1073741825
+  - first: {x: 5, y: -16, z: 0}
+    second:
+      serializedVersion: 2
+      m_TileIndex: 71
+      m_TileSpriteIndex: 71
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 0
+      m_TileObjectToInstantiateIndex: 65535
+      dummyAlignment: 0
+      m_AllTileFlags: 1073741825
+  - first: {x: 6, y: -16, z: 0}
+    second:
+      serializedVersion: 2
+      m_TileIndex: 72
+      m_TileSpriteIndex: 72
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -987,6 +1027,14 @@ Tilemap:
     m_Data: {fileID: 11400000, guid: 703ea942ae411af48b7762774d46c24a, type: 2}
   - m_RefCount: 1
     m_Data: {fileID: 11400000, guid: 7518806678a7b5b4f8e58baf217dd90c, type: 2}
+  - m_RefCount: 1
+    m_Data: {fileID: 11400000, guid: 01c37633091198d4cadb1090a0323978, type: 2}
+  - m_RefCount: 1
+    m_Data: {fileID: 11400000, guid: 18f42918b0ed1f742b201ce8d5b08fd1, type: 2}
+  - m_RefCount: 1
+    m_Data: {fileID: 11400000, guid: 82abd882fb48a6948ba78554c2dba201, type: 2}
+  - m_RefCount: 1
+    m_Data: {fileID: 11400000, guid: 66beacccb7686dd41aacb41285a5b783, type: 2}
   m_TileSpriteArray:
   - m_RefCount: 1
     m_Data: {fileID: 21300000, guid: d8d8e188a1a43064a9946c5457126f2b, type: 3}
@@ -1128,8 +1176,16 @@ Tilemap:
     m_Data: {fileID: 21300000, guid: c4298afc174e75e48bf47a0e7105e213, type: 3}
   - m_RefCount: 1
     m_Data: {fileID: 21300000, guid: 0a88447abbe8e034c8100d007e21458e, type: 3}
+  - m_RefCount: 1
+    m_Data: {fileID: 21300000, guid: 77232dfa9f7de574498fa69867cb658e, type: 3}
+  - m_RefCount: 1
+    m_Data: {fileID: 21300000, guid: b2a526acd44e8ca46b00003f9b8382d1, type: 3}
+  - m_RefCount: 1
+    m_Data: {fileID: 21300000, guid: 1019effb9c755484d8f4f5c8c2b8509c, type: 3}
+  - m_RefCount: 1
+    m_Data: {fileID: 21300000, guid: 784bf8b6988b9a244a96c880c9bf6fd8, type: 3}
   m_TileMatrixArray:
-  - m_RefCount: 71
+  - m_RefCount: 75
     m_Data:
       e00: 1
       e01: 0
@@ -1220,7 +1276,7 @@ Tilemap:
       e32: 2.24e-43
       e33: 1
   m_TileColorArray:
-  - m_RefCount: 76
+  - m_RefCount: 80
     m_Data: {r: 1, g: 1, b: 1, a: 1}
   m_TileObjectToInstantiateArray: []
   m_AnimationFrameRate: 1
@@ -1288,14 +1344,14 @@ TilemapRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_ChunkSize: {x: 32, y: 32, z: 32}
-  m_ChunkCullingBounds: {x: 0, y: 0, z: 0}
+  m_ChunkCullingBounds: {x: 0.78, y: 0.78, z: 0}
   m_MaxChunkCount: 16
   m_MaxFrameAge: 16
   m_SortOrder: 0
   m_Mode: 0
   m_DetectChunkCullingBounds: 0
   m_MaskInteraction: 0
---- !u!114 &4871522835626449160
+--- !u!114 &6224166354882942628
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
