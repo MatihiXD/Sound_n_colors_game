@@ -10,8 +10,8 @@ public class redplat : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        on2.SetActive(true);
         on.SetActive(true);
+        on2.SetActive(true);
     }
 
 }
