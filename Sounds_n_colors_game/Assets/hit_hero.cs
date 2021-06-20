@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class hit_hero : MonoBehaviour
@@ -15,13 +13,13 @@ public class hit_hero : MonoBehaviour
         }
     }
     void ResetAll() {
-        while (index <= toReset.Length) {
+        while (index < toReset.Length) {
             if (!toReset[index].activeSelf)
                 toReset[index].SetActive(true);
             index += 1;
         }
         index = 0;
-        while (index <= weapons.Length) {
+        while (index < weapons.Length) {
             if (weapons[index].activeSelf)
                 weapons[index].SetActive(false);
         }

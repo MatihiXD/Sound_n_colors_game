@@ -5,6 +5,9 @@ public class KeyItems : MonoBehaviour
     public int flute;
     public int guitar;
     public int trombone;
+    public GameObject fluteOBJ;
+    public GameObject guitarOBJ;
+    public GameObject tromboneOBJ;
 
     public static KeyItems instance;
 
@@ -38,5 +41,18 @@ public class KeyItems : MonoBehaviour
         flute = 0;
         guitar = 0;
         trombone = 0;
+    }
+
+    private void Update() {
+        fluteOBJ.SetActive(false);
+        guitarOBJ.SetActive(false);
+        tromboneOBJ.SetActive(false);
+
+        if (flute > 0)
+            fluteOBJ.SetActive(true);
+        if (guitar > 0)
+            guitarOBJ.SetActive(true);
+        if (trombone > 0)
+            tromboneOBJ.SetActive(true);
     }
 }
