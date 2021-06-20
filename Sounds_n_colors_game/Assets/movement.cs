@@ -11,14 +11,8 @@ public class movement : MonoBehaviour
     public Transform groundCheckLeft;
     public Transform groundCheckRight;
     public Rigidbody2D rb;
+    public Animator animator;
     public SpriteRenderer spriteRenderer;
-    public Sprite jump;
-    public Sprite idle;
-
-    void Start()
-    {
-
-    }
 
     // Update is called once per frame
     void Update()
@@ -31,7 +25,7 @@ public class movement : MonoBehaviour
         } else if (Input.GetAxis("Horizontal") < 0) {
             spriteRenderer.flipX = true;
         }
-        if (Input.GetButtonDown("Jump") && isGrounded) {
+        if (Input.GetButtonDown("Jump") && isGrounded == true) {
             isJumping = true;
         }
         MovePlayer(translation);
@@ -41,14 +35,17 @@ public class movement : MonoBehaviour
     void MovePlayer(float _translation)
     {
         transform.Translate(_translation, 0, 0);
+        if (isGrounded == true) {
+            float characterSpeed = Mathf.Abs(_translation);
+            animator.SetBool("IsGrounded", true);
+            animator.SetFloat("Speed", characterSpeed);
+        } else {
+            animator.SetBool("IsGrounded", false);
+            animator.SetFloat("Speed", 0);
+        }
         if (isJumping == true) {
             rb.AddForce(new Vector2(0f, jumpForce));
             isJumping = false;
-        }
-        if (isGrounded == true) {
-            spriteRenderer.sprite = idle;
-        } else if (isGrounded == false) {
-            spriteRenderer.sprite = jump;
         }
     }
 }
