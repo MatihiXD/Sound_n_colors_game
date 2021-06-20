@@ -10,8 +10,11 @@ public class redplat : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        on.SetActive(true);
-        on2.SetActive(true);
+        if (collision.CompareTag("Player"))
+        {
+            on.SetActive(true);
+            on2.SetActive(true);
+        }
     }
 
 }
