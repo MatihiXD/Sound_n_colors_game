@@ -5,15 +5,12 @@ using UnityEngine;
 public class redplat : MonoBehaviour
 {
     public GameObject on;
-    public GameObject on2;
-
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.CompareTag("Player"))
         {
             on.SetActive(true);
-            on2.SetActive(true);
         }
     }
 
