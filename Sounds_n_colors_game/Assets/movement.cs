@@ -37,10 +37,10 @@ public class movement : MonoBehaviour
         transform.Translate(_translation, 0, 0);
         if (isGrounded == true) {
             float characterSpeed = Mathf.Abs(_translation);
-            animator.SetBool("IsGrounded", true);
+            animator.SetBool("Grounded", true);
             animator.SetFloat("Speed", characterSpeed);
         } else {
-            animator.SetBool("IsGrounded", false);
+            animator.SetBool("Grounded", false);
             animator.SetFloat("Speed", 0);
         }
         if (isJumping == true) {
