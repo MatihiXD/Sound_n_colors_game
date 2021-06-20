@@ -9,7 +9,8 @@ public class pickup_guitar : MonoBehaviour
         {
             guitar.SetActive(true);
             KeyItems.instance.Addguitar();
-            Destroy(gameObject);
+            gameObject.SetActive(false);
+//            Destroy(gameObject);
         }
     }
 }

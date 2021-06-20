@@ -9,7 +9,8 @@ public class pickup : MonoBehaviour
         {
             flute.SetActive(true);
             KeyItems.instance.Addflute();
-            Destroy(gameObject);
+            gameObject.SetActive(false);
+            //Destroy(gameObject);
         }
     }
 }

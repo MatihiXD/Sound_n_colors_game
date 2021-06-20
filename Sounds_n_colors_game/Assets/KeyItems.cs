@@ -32,4 +32,11 @@ public class KeyItems : MonoBehaviour
     {
         trombone += 1;
     }
+
+    public void resetItems()
+    {
+        flute = 0;
+        guitar = 0;
+        trombone = 0;
+    }
 }

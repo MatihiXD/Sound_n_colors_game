@@ -9,7 +9,8 @@ public class mouse_weakness : MonoBehaviour
         if (collision.CompareTag("Player")) {
             if (KeyItems.instance.flute != 0) {
                 source.Play();
-                Destroy(objectToDestroy);
+                objectToDestroy.SetActive(false);
+//                Destroy(objectToDestroy);
             }
         }
     }

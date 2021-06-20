@@ -9,7 +9,8 @@ public class pickup_trombone : MonoBehaviour
         {
             trombone.SetActive(true);
             KeyItems.instance.Addtrombone();
-            Destroy(gameObject);
+            gameObject.SetActive(false);
+//            Destroy(gameObject);
         }
     }
 }
